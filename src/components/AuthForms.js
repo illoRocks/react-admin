@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { Input, Submit } from "../utils/Form";
-import FormCard from "../utils/FormCard";
 import Card from "../utils/Card";
 
 const LoginForm = ({ user, onSubmit, onChange }) => (

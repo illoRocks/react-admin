@@ -5,25 +5,20 @@ import { Switch, Route } from "react-router-dom";
 import Sidemenu from '../components/Sidemenu.js';
 import PostForm from '../components/PostForm.js';
 import Overview from '../components/Overview.js';
-
-
+import BlogOverview from '../components/BlogOverview.js';
 
 // utils
 import Card from '../utils/Card.js';
 import {Input, Submit} from '../utils/Form.js';
 
 
-
-
-
-
 class LoginPage extends React.Component {
 
   constructor(props) {
-    super(props);
-
-    this.state = {};
+    super(props)
+    
   }
+
 
 
   render() {
@@ -43,7 +38,7 @@ class LoginPage extends React.Component {
             <Switch>
               <Route exact path="/dashboard/" component={Overview} />
               <Route path="/dashboard/newpost" component={PostForm} />
-              {/* <Route path="/dashboard" component={DashboardPage} /> */}
+              <Route path="/dashboard/blog" component={BlogOverview} />
             </Switch>
 
 

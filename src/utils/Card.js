@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ children, title }) => (
+const Card = ({ children, title, fill }) => (
   <div>
     <div className="card has-shadow">
       {title &&
@@ -9,7 +9,7 @@ const Card = ({ children, title }) => (
             {title}
           </p>
         </div>}
-      <div className="card-content">
+      <div className={!fill && "card-content"}>
           {children}
       </div>
     </div>
